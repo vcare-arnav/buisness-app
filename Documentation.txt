@@ -1,0 +1,6 @@
+1. FILE STRUCTURE
+root
+ >frontend
+    >R app
+ >backend
+    >MEN app
