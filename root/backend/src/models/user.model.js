@@ -84,7 +84,14 @@ const userSchema = mongoose.Schema(
       type: Boolean,
       default: false,
     },
+  
+    imguser:{
+      data:Buffer,
+      contentType: String,
+    },
+
   },
+
   {
     timestamps: true,
   }

@@ -77,6 +77,21 @@ app.use(errorConverter);
 // handle error
 app.use(errorHandler);
 
+// ---------------------------------------------------
+// PUT IN .ENV FILE for SMTP EMAIL SERVER
+// ---------------------------------------------------------
+
+// # SMTP configuration options for the email service
+// # For testing, you can use a fake SMTP service like Ethereal: https://ethereal.email/create
+// SMTP_HOST=email-server
+// SMTP_PORT=587
+// SMTP_USERNAME=email-server-username
+// SMTP_PASSWORD=email-server-password
+// EMAIL_FROM=support@yourapp.com
+
+
+
+
 // set up multer for storing uploaded files
  
 var multer = require('multer');

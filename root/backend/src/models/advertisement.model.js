@@ -13,7 +13,7 @@ const advertisementSchema = mongoose.Schema(
             index: true,
 
         },
-        img: {
+        imgadvertisement: {
             data: Buffer,
             contentType: String 
         },

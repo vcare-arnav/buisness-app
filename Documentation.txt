@@ -4,3 +4,5 @@ root
     >R app
  >backend
     >MEN app
+2. API connection from react to backend
+	2.1 axious or porxy/dataprovidor

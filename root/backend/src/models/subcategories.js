@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const { toJSON, paginate } = require('./plugins');
 // const { roles } = require('../config/roles');
 
-const categoriesSchema = mongoose.Schema(
+const subcategoriesSchema = mongoose.Schema(
     { 
         title: {
           type: String,
@@ -13,9 +13,9 @@ const categoriesSchema = mongoose.Schema(
           
         },
 
-        subcategories_list: {
+        products_list: {
             type: [ mongoose.SchemaTypes.ObjectId ],
-            ref: 'Subcategories',
+            ref: 'Products',
             required: true,
         },
         imgcategories: {
@@ -31,13 +31,13 @@ const categoriesSchema = mongoose.Schema(
 );
 
 // add plugin that converts mongoose to json
-categoriesSchema.plugin(toJSON);
-categoriesSchema.plugin(paginate);
+subcategoriesSchema.plugin(toJSON);
+subcategoriesSchema.plugin(paginate);
 
 /**
- * @typedef Categories
+ * @typedef Subcategories
  */
- const Categories = mongoose.model('Categories', categoriesSchema);
+ const Subcategories = mongoose.model('Subategories', subcategoriesSchema);
 
- module.exports = Categories;
+ module.exports = Subcategories;
 
